@@ -7,7 +7,7 @@ function Footer() {
         <ul className="flex w-[90%] m-auto pl-0 gap-5 fleks">
           <li>
             <Image
-              src="/instagram.png"
+              src="/instagram.jpg"
               alt="err"
               width={20}
               height={10}
