@@ -17,7 +17,7 @@ function Footer() {
           </li>
           <li>
             <Image
-              src="/facebook.jpg"
+              src="/facebook.png"
               alt="err"
               width={20}
               height={10}
