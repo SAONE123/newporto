@@ -6,6 +6,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --trapesium-color: rgba(36, 72, 157, 0.233)
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,12 +17,165 @@
   }
 }
 
+html,
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.noposition {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.content1 {
+  background: url(./1289176.jpg);
+
+}
+
+
+.none {
+  display: none;
+}
+
+.text-skill {
+  position: relative;
+  text-align: center;
+  top: -20px;
+}
+
+.resiste {
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+.left-\[35vw\] {
+  left: 22vw;
+  transition: 0.2s ease;
+}
+
+.container-background {
+  width: 70%;
+  position: relative;
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  margin: auto;
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+.fleks li {
+  margin: 20px 0px;
+  color: #000;
+  display: flex;
+}
+
+.fleks li a:hover {
+  color: blue;
+}
+
+.container-footer {
+  width: 100%;
+}
+
+
+@media screen and (min-width: 800px) {
+  .h-\[50vh\] {
+    height: 27vh;
+  }
+
+  .mb-5 {
+    margin-top: 61px;
+    margin-bottom: 1.25rem;
+  }
+
+  .container-background {
+    width: 87%;
+    position: relative;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 70px px;
+    margin-bottom: 50px;
+  }
+
+  .h-\[100vh\] {
+    height: 63vh;
+  }
+
+  .sosmed {
+    width: 2.5rem;
+    margin-right: 12px;
+  }
+
+  .fleks {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .resiste {
+    position: absolute;
+    width: 35%;
+    margin: auto;
+    top: 10px;
+  }
+
+  .text-center {
+    text-align: center;
+    color: #fff;
+  }
+
+  .container-background {
+    width: 36%;
+    position: absolute;
+    text-align: right;
+    color: white;
+    font-size: 20px;
+    margin: auto;
+    top: 180px;
+    right: 25px;
+  }
+
+  .container-footer {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+  }
+
+  .h-\[100vh\] {
+    height: 100vh;
+  }
+
+  .fleks li {
+    margin: 20px 0px;
+    color: #fff;
+    display: flex;
+  }
+
+  .fleks Image {
+    margin: 0 5px;
+  }
+
+  .grid-cols-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .fluxer {
+    width: 200px;
+  }
 }
